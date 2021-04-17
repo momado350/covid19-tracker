@@ -1,23 +1,43 @@
-import logo from './logo.svg';
+
 import './App.css';
+import {
+  MenuItem,
+  FormControl,
+  Select,
+} from "@material-ui/core"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      <h1> COVID-19 TRACKER</h1>
+      {/* using material ui to create a dropdwon list*/}
+      <FormControl className="app__dropdown">
+        <Select variant="outlined"
+        value="abc"
         >
-          Learn React
-        </a>
-      </header>
+          <MenuItem value=""></MenuItem>
+          <MenuItem value=""></MenuItem>
+          <MenuItem value=""></MenuItem>
+          <MenuItem value=""></MenuItem>
+
+        </Select>
+
+      </FormControl>
+
+      {/* Header */}
+      {/* Tilte + Select input dropdown field */}
+
+      {/* infoBox */}
+      {/* infoBox */}
+      {/* infoBox */}
+
+
+      {/* Table */}
+      {/* Graph*/}
+
+      {/* Map */}
+
+      
     </div>
   );
 }
